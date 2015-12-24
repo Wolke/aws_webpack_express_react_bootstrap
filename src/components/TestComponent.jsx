@@ -6,7 +6,7 @@ var ReactBootstrap = require('react-bootstrap');
 var TestComponent = React.createClass({
   render: function() {
     return (
-      <div>Hello World!!</div>
+      <div>Hello GG!!</div>
     );
   }
 });
