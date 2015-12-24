@@ -19601,7 +19601,7 @@ webpackJsonp([1,3],[
 	var TestComponent = React.createClass({displayName: "TestComponent",
 	  render: function() {
 	    return (
-	      React.createElement("div", null, "Hello Girl!!")
+	      React.createElement("div", null, "Hello GG!!")
 	    );
 	  }
 	});

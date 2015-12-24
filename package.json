@@ -2,6 +2,8 @@
   "name": "quotes",
   "version": "0.0.0",
   "private": true,
+  "description": "save webpack;jsx-loader;file-loader;jade-html-loader by yourself",
+ 
   "scripts": {
     "dev":  "webpack-dev-server --progress --colors",
     "start": "node ./bin/www"
