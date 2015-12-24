@@ -1,6 +1,10 @@
 extends layout
 
 block content
+  #react-container
+  script(type='text/javascript' src='bundle.js')
   h1= title
+  h2 Hello
   p Welcome to #{title}
   a(class='icon ion-social-twitter' href='#') Great
+  div(id='react-container')
