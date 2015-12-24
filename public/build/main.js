@@ -4,10 +4,11 @@ webpackJsonp([1,3],[
 
 	/** @jsx React.DOM */
 	var React         = __webpack_require__(1);
-	var TestComponent = __webpack_require__(158);
+	// var TestComponent = require('./components/TestComponent.jsx');
+	var MainComponent = __webpack_require__(158);
 
 	React.render(
-	  React.createElement(TestComponent, null),
+	  React.createElement(MainComponent, null),
 	  document.getElementById("react-container")
 	);
 
@@ -19595,18 +19596,44 @@ webpackJsonp([1,3],[
 
 	/** @jsx React.DOM */
 	var React           = __webpack_require__(1);
-	var ReactBootstrap = __webpack_require__(159);
+	// var ReactBootstrap = require('react-bootstrap');
+	var Row = __webpack_require__(159).Row;
 
-
-	var TestComponent = React.createClass({displayName: "TestComponent",
+	var Col = __webpack_require__(159).Col;
+	// <Col xs={6} md={4} />
+	var MainComponent = React.createClass({displayName: "MainComponent",
 	  render: function() {
 	    return (
-	      React.createElement("div", null, "Hello GG!!")
-	    );
-	  }
+	        
+	            
+	                React.createElement(Row, null, 
+	                  React.createElement(Col, {md: 3, sm: 6, className: "portfolio-item"}, 
+	                    React.createElement("figure", {className: "portfolio-image"}, 
+	                      React.createElement("img", {className: "img-responsive", src: "assets/img/fox.jpg", height: "300", width: "400", alt: ""}), 
+	                      React.createElement("figcaption", {className: "portfolio-caption"}, "React 1")
+	                    )
+	                  ), 
+	                  React.createElement(Col, {md: 3, sm: 6, className: "portfolio-item"}, 
+	                    React.createElement("figure", {className: "portfolio-image"}, 
+	                      React.createElement("img", {className: "img-responsive", src: "assets/img/fox.jpg", height: "300", width: "400", alt: ""}), 
+	                      React.createElement("figcaption", {className: "portfolio-caption"}, "React 2")
+	                    )
+	                  ), 
+	                  React.createElement(Col, {md: 3, sm: 6, className: "portfolio-item"}, 
+	                    React.createElement("figure", {className: "portfolio-image"}, 
+	                      React.createElement("img", {className: "img-responsive", src: "assets/img/fox.jpg", height: "300", width: "400", alt: ""}), 
+	                      React.createElement("figcaption", {className: "portfolio-caption"}, "React 3")
+	                    )
+	                  )
+	                  
+	                )
+	            
+
+	      
+	      )}
 	});
 
-	module.exports = TestComponent;
+	module.exports = MainComponent;
 
 /***/ },
 /* 159 */

@@ -1,9 +1,7 @@
 /** @jsx React.DOM */
 var React           = require('react');
 var ReactBootstrap = require('react-bootstrap');
-
-console.log(ReactBootstrap);
-var Button = require('react-bootstrap').Button;
+// var Button = require('react-bootstrap').Button;
 
 var TestComponent = React.createClass({
   render: function() {
