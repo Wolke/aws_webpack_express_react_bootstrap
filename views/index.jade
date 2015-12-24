@@ -3,8 +3,18 @@ extends layout
 block content
   #react-container
   script(type='text/javascript' src='/main.js')
-  h1= title
-  h2 Hello
-  p Welcome to #{title}
-  a(class='icon ion-social-twitter' href='#') Great
-  div(id='react-container')
+  section(class="portfolio-display" id="portfolio")
+    h2 Portfolio
+      div(class="row")
+        div(class="col-md-3 col-sm-6 portfolio-item")
+           figure(class="portfolio-image")
+              img(class="img-responsive" src="assets/img/fox.jpg" height="300" width="400" alt="")
+              figcaption(class="portfolio-caption") 6 Layers 
+        div(class="col-md-3 col-sm-6 portfolio-item")
+           figure(class="portfolio-image")
+              img(class="img-responsive" src="assets/img/fox.jpg" height="300" width="400" alt="")
+              figcaption(class="portfolio-caption") Brain
+        div(class="col-md-3 col-sm-6 portfolio-item")
+           figure(class="portfolio-image")
+              img(class="img-responsive" src="assets/img/fox.jpg" height="300" width="400" alt="")
+              figcaption(class="portfolio-caption") Fox

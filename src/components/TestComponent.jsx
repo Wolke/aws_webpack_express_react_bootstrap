@@ -2,11 +2,13 @@
 var React           = require('react');
 var ReactBootstrap = require('react-bootstrap');
 
+console.log(ReactBootstrap);
+var Button = require('react-bootstrap').Button;
 
 var TestComponent = React.createClass({
   render: function() {
     return (
-      <div>Hello GG!!</div>
+      <div><Button bsStyle="primary">我好棒</Button>Hello GG!!</div>
     );
   }
 });
