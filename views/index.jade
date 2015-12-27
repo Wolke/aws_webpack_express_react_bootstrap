@@ -1,6 +1,17 @@
 extends layout
 
 block content
+  section(class="portfolio-display" id="portfolio")
+    div(class="container")
+      h2=question
+        div(class="row")
+          each val in sel
+            div(class="col-md-3 col-sm-6 portfolio-item ")
+              button(type="button" class="btn btn-primary") 我好強
+              figure(class="portfolio-image")
+                - var n = 'assets/img/' + val + '.jpg'
+                img(class="img-responsive" src=n height="300" width="400" alt="")
+                figcaption(class="portfolio-caption")="JADE SELECTION "+val
   #react-container
   script(type='text/javascript' src='/main.js')
   

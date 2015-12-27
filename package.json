@@ -2,7 +2,7 @@
   "name": "Tarot",
   "version": "0.0.0",
   "private": true,
-  "description": "save webpack;jsx-loader;file-loader;jade-html-loader by yourself",
+  "description": "save webpack;extract-text-webpack-plugin;less-loader ;jsx-loader;file-loader;jade-html-loader by yourself",
   "scripts": {
     "dev": "webpack-dev-server --progress --colors",
     "start": "node ./bin/www"
@@ -13,6 +13,7 @@
     "debug": "~2.2.0",
     "edp-build-fontmin": "*",
     "express": "~4.13.1",
+    "extract-text-webpack-plugin": "^0.9.1",
     "file-loader": "^0.8.5",
     "flux": "^2.0.1",
     "jade": "~1.11.0",
@@ -24,5 +25,13 @@
     "react-dom": "^0.14.0",
     "serve-favicon": "~2.3.0",
     "webpack": "^1.12.9"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7"
   }
 }

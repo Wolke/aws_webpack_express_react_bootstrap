@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title= title
+    title=title
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     link(rel='stylesheet', href='/stylesheets/style.css')
     meta(charset='utf-8')
@@ -9,6 +9,7 @@ html
     link(rel='apple-touch-icon' href='assets/img/apple-icon.png')
     link(href='assets/css/frameworks.css' rel='stylesheet')
     link(href='assets/css/style.css' rel='stylesheet')
+    link(href='/style.css' rel='stylesheet')
     link(rel='shortcut icon' href='assets/img/favicon.png?v=2' type='image/png')
     script(src='/common.js')
     | <!--[if 1t IE 9]> <script src="assets/js/html5shiv.min.js" type="text/javascript" ></script> <![endif]-->
@@ -16,16 +17,16 @@ html
     nav(id="menu" class="navmenu navmenu-inverse navmenu-fixed-left offcanvas portfolio-menu" role="navigation")
         ul(class="nav navmenu-nav")
             li(class="active")
-                a(href="#") Home
+                a(href="#") Tarot
             li
-                a(href="#") Shop
-            li
-                a(href="#") Speaking
+                a(href="#") Contact
     div(class="navbar navbar-default navbar-portfolio portfolio-topbar" style="")
         button(type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#menu" data-canvas="body")
             span(class="icon-bar")
             span(class="icon-bar")
             span(class="icon-bar")
+        div(class="navbar-header")
+            a(class="navbar-brand")=title
     main(class="portfolio-main" id="content" role="main")      
         block content
             
